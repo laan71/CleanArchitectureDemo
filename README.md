@@ -2,9 +2,12 @@
 
 Milestone 1: An empty Android App is created. 
 
+
+
+
 TODO:
 Create an empty Android app (use the Empty Activity template, for example).
-Save the project on GitHub and make sure to commit and push for each point that is completed.
+Save the project on GitHub and make sure to commit and push for each point that is completed.   DONE
 
 Add a TextView and an EditText to the screen along with a Button.
 When the button is activated, the label (TextView) must be updated with the content from the text field (EditText).
