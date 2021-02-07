@@ -6,6 +6,7 @@ Milestone 1: An empty Android App is created.
 
 
 TODO:
+
 Create an empty Android app (use the Empty Activity template, for example).
 Save the project on GitHub and make sure to commit and push for each point that is completed.   DONE
 
