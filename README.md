@@ -2,6 +2,8 @@
 
 Milestone 1: An empty Android App is created. 
 
+Milestone 2: Textview, EditText and Button is created.
+
 
 
 
@@ -11,7 +13,7 @@ Create an empty Android app (use the Empty Activity template, for example).
 Save the project on GitHub and make sure to commit and push for each point that is completed.   DONE
 
 Add a TextView and an EditText to the screen along with a Button.
-When the button is activated, the label (TextView) must be updated with the content from the text field (EditText).
+When the button is activated, the label (TextView) must be updated with the content from the text field (EditText).    DONE
 
 Separate data storage from View so that it is stored and maintained in a separate Model class.
 Place the model class in its own "model" package. The class can, for example, be called "Model".
