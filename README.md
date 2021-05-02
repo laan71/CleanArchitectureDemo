@@ -4,6 +4,11 @@ Milestone 1: An empty Android App is created.
 
 Milestone 2: Textview, EditText and Button is created.
 
+Milestone 3: Data storage is separated from view & is stored and maintained in a separat Model class. The model class is placed in it´s own "model" package and the view class 
+is placed in it´s own "view" package.
+
+Milestone 4: Model is made Observable and Observer is implemented in AndroidView
+
 
 
 
@@ -17,11 +22,11 @@ When the button is activated, the label (TextView) must be updated with the cont
 
 Separate data storage from View so that it is stored and maintained in a separate Model class.
 Place the model class in its own "model" package. The class can, for example, be called "Model".
-At the same time, place the View class in its own "view" package. For example, the class may be named "AndroidView" (but may also simply remain named as "MainActivity").
+At the same time, place the View class in its own "view" package. For example, the class may be named "AndroidView" (but may also simply remain named as "MainActivity").   DONE
 
 Implement Observable functionality for the Model class,
 so that the label is only updated when the Model class signals that a change has taken place,
-i.e. as the last in the Model-class set method.
+i.e. as the last in the Model-class set method.                                                           DONE
 
 For example, use java.util.Observer and java.util.Observable to implement the Observer pattern.
 (We see a lot of them being deprecated in Java 9.)
