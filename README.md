@@ -26,14 +26,14 @@ At the same time, place the View class in its own "view" package. For example, t
 
 Implement Observable functionality for the Model class,
 so that the label is only updated when the Model class signals that a change has taken place,
-i.e. as the last in the Model-class set method.                                                           DONE
+i.e. as the last in the Model-class set method.                                                           
 
 For example, use java.util.Observer and java.util.Observable to implement the Observer pattern.
 (We see a lot of them being deprecated in Java 9.)
 
 Make sure there is no dependency from the Model class to the View class,
 i.e. that it must not have direct knowledge of the View class.
-(It must only know the View class as an Observer.)
+(It must only know the View class as an Observer.)                                             DONE
 
 Customize the View class to present transformed data in the View.
 The new functionality will basically wrap the Model class
