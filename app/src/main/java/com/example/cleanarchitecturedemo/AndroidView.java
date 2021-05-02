@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Observable;
+import java.util.Observer;
+
 public class AndroidView extends AppCompatActivity {
 
      Model model = new Model();
@@ -15,6 +18,8 @@ public class AndroidView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        observeModel(model);
+
         TextView outputView = (TextView) findViewById(R.id.outputView);
         outputView.setText(model.getData());
 
@@ -22,12 +27,23 @@ public class AndroidView extends AppCompatActivity {
         inputText.setText(model.getData());
     }
 
+    private void observeModel(Model model) {
+        model.addObserver(new Observer() {
+            @Override
+            public void update (Observable o, Object arg){
+                if (o instanceof Model) {
+                    String data = ((Model) o).getData();
+                    TextView outputView = findViewById(R.id.outputView);
+                    outputView.setText(data);
+                }
+            }
+        });
+    }
+
     public void enterInput(View view) {
-        TextView outputView = (TextView) findViewById(R.id.outputView);
         EditText inputText = (EditText) findViewById(R.id.inputText);
 
         String input = inputText.getText().toString();
         model.setData(input);
-        outputView.setText(input);
     }
 }
