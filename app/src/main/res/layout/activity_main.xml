@@ -8,24 +8,25 @@
         tools:context=".MainActivity">
 
     <EditText
-            android:id="@+id/inputText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:ems="10"
-            android:inputType="text"
-            android:text="Hello"
-            app:layout_constraintEnd_toStartOf="@+id/enterButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/outputView" />
+        android:id="@+id/inputText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/Hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/enterButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputView" />
 
     <Button
             android:id="@+id/enterButton"
-            android:layout_widget="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
@@ -33,7 +34,7 @@
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
             android:onClick="enterInput"
-            android:text="Enter"
+            android:text="@string/enter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/inputText"
             app:layout_constraintTop_toBottomOf="@+id/outputView" />
@@ -41,14 +42,13 @@
     <TextView
             android:id="@+id/outputView"
             android:layout_width="0dp"
-            android:layout_hight="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
-            android:text="Hello"
-            app:layout_constraintEnd_ofEndOf="parent"
+            android:text="@string/hello"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
